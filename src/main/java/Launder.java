@@ -9,7 +9,7 @@ public class Launder {
             try {
                 brackets.valid();
             }catch (Brackets.BracketMatchException e){
-                e.printStackTrace();
+                System.err.println(e.getMessage());
                 continue;
             }
             int result = ShuntingYard.eval(expressionLine);
